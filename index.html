@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OfflineJudge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="brand">
+    <div class="logo">OJ</div>
+    <span>OfflineJudge</span>
+  </div>
+
+  <div class="actions">
+    <select id="language">
+      <option value="python">Python</option>
+      <option value="cpp">C++</option>
+      <option value="java">Java</option>
+    </select>
+
+    <button onclick="runCode()">▶ Run</button>
+  </div>
+</div>
+
+<!-- MAIN -->
+<div class="layout">
+  <div id="editor"></div>
+
+  <div class="side">
+    <div class="box">
+      <div class="title">Custom Input</div>
+      <textarea id="input" placeholder="Enter input here..."></textarea>
+    </div>
+
+    <div class="box">
+      <div class="title">Output</div>
+      <pre id="output"></pre>
+    </div>
+  </div>
+</div>
+
+<script src="node_modules/ace-builds/src-min/ace.js"></script>
+<script src="renderer.js"></script>
+</body>
+</html>
